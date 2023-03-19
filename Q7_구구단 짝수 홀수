@@ -1,0 +1,29 @@
+public class Quiz_0317_7 {
+	public static void main(String[] args) {
+	
+		//7단_홀수, 짝수 i+1
+		for (int i=1; i<10; i=i+1) {
+			if ( i%2== 0) {
+			System.out.println("7 X " + i + " = " + (i*7)+","+"짝수입니다.");
+			} else {
+				System.out.println("7 X " + i + " = " + (i*7)+","+"홀수입니다.");
+			}
+		}
+		System.out.println("-----------------------"); // 구분선
+		
+		
+		//8단은 다 짝수
+		for (int i=1; i<10; i=i+1)
+			System.out.println("8 X " + i + " = " + (i*8)+","+"짝수입니다.");
+			System.out.println("-----------------------"); //구분선
+			
+			//9단_홀수, 짝수
+			for (int i=1; i<10; i=i+1){
+				if (i %2 ==0) {
+					System.out.println("9 X " + i + " = " + (i*9)+","+"짝수입니다.");
+				} else {
+					System.out.println("9 X " + i + " = " + (i*9)+","+"홀수입니다.");
+			}
+		}	
+	}
+}
