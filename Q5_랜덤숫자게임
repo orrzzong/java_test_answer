@@ -1,0 +1,40 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class R_Number_0317_5 {
+	public static void main(String[] args) {
+		
+		for (int i=1; i<999999; i=i+1) {
+	
+		// 사용자에게 숫자 입력받기
+		System.out.println("숫자를 입력해주세요.");
+		Scanner s = new Scanner(System.in);
+		int Num = s.nextInt();
+		
+		// 임의의 숫자 발생_랜덤숫자 
+		Random r = new Random();
+		int R_Num = r.nextInt(100);
+
+		// 임의의 숫자 추가_컴퓨터 입력숫자
+		Random r2 = new Random();
+		int R2_Num = r2.nextInt(100);
+		
+		//사용자 입력숫자 + 랜덤숫자
+		int SumNumber = Num + R_Num;
+		
+		//컴퓨터 입력숫자 + 랜덤숫자
+		int SumNumber_2 = R2_Num + R_Num;
+		
+		if (0 <= Num && 101 < Num) { 
+			System.out.println("0~100사이의 숫자가 아닙니다.");
+			System.out.println("다시 입력해주세요.");
+			}
+			else if (SumNumber < SumNumber_2) {
+				System.out.println("사용자 입력숫자는 " + Num + " 사용자입력숫자+랜덤숫자는 " + SumNumber + " 컴퓨터 입력숫자 + 랜덤숫자는" + SumNumber_2 +"컴퓨터 승리입니다.");
+			}
+			else {
+				System.out.println("사용자 입력숫자는 " + Num + " 사용자입력숫자+랜덤숫자는 " + SumNumber + " 컴퓨터 입력숫자 + 랜덤숫자는" + SumNumber_2 + "사용자 승리입니다.");
+			}
+		}
+	}
+}
