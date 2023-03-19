@@ -1,0 +1,26 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Quiz_0317_8 {
+	public static void main(String[] args) {
+	
+		System.out.println("0부터 100사이의 숫자를 입력해주세요.");
+		Scanner s = new Scanner(System.in);
+		int Number = s.nextInt();
+		
+		Random r = new Random();
+		int R_Num = r.nextInt(10)+1;
+		
+		int D_Num = Number / R_Num;
+		
+		if( 0>Number || 100 <Number ) {
+			System.out.println("숫자가 큽니다.");
+		}
+		else if (D_Num % 2 == 1 ) {
+			System.out.println("당신의 숫자 " + Number + " 에서" + " 임의의 값" + R_Num + " 나눈 값은" + D_Num + " 해당 숫자는 " + "홀수 입니다.");
+		} else {
+			System.out.println("당신의 숫자 " + Number + " 에서" + " 임의의 값" + R_Num + " 나눈 값은" + D_Num + " 해당 숫자는 " + "짝수 입니다.");
+		}
+	}
+}
+
